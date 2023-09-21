@@ -1,0 +1,58 @@
+[
+    {
+        "_id": "pBNR1L",
+        "name": "Buzz Lightyear",
+        "price": 620,
+        "labels": [
+            "Doll",
+            "Battery Powered",
+            "Baby"
+        ],
+        "createdAt": 1695230013151,
+        "inStock": true
+    },
+    {
+        "_id": "j6VDEr",
+        "name": "Kobi Kobi",
+        "price": 633,
+        "labels": [
+            "Outdoor",
+            "Art",
+            "Baby"
+        ],
+        "createdAt": 1695230013151,
+        "inStock": true
+    },
+    {
+        "_id": "CanXxD",
+        "name": "Luka Doncic",
+        "price": 129,
+        "labels": [
+            "Doll",
+            "Puzzle",
+            "Baby"
+        ],
+        "createdAt": 1695230013151,
+        "inStock": true
+    },
+    {
+        "_id": "d6ziZu",
+        "name": "Cristiano Ronaldo",
+        "price": 582,
+        "labels": [
+            "Box game",
+            "Battery Powered",
+            "Art"
+        ],
+        "createdAt": 1695230013151,
+        "inStock": true
+    },
+    {
+        "name": "Talking Doll",
+        "price": 663,
+        "labels": [],
+        "createdAt": 1695230013151,
+        "inStock": true,
+        "_id": "bz1ST"
+    }
+]
