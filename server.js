@@ -25,15 +25,15 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(cookieParser()) // for res.cookies
 app.use(express.json()) // for req.body
-app.use(express.static('public'))
+// app.use(express.static('public'))
 
 
 
 // **************** Toys API ****************:
 // List
 app.get('/api/toy', (req, res) => {
-    const { txt, maxPrice } = req.query
-    const filterBy = { txt, maxPrice: +maxPrice }
+    const { name, price, inStock } = req.query
+    const filterBy = { name, price: +price, inStock }
     toyService.query(filterBy)
         .then(toys => {
             res.send(toys)
@@ -46,11 +46,13 @@ app.get('/api/toy', (req, res) => {
 
 // Add
 app.post('/api/toy', (req, res) => {
-    const { name, price } = req.body
+    const { name, price, labels, inStock } = req.body
 
     const toy = {
         name,
-        price: +price
+        price: +price,
+        labels,
+        inStock,
     }
 
     toyService.save(toy)
@@ -113,74 +115,9 @@ app.delete('/api/toy/:toyId', (req, res) => {
         })
 })
 
-
-// **************** Users API ****************:
-// app.get('/api/auth/:userId', (req, res) => {
-//     const { userId } = req.params
-//     userService.getById(userId)
-//         .then(user => {
-//             res.send(user)
-//         })
-//         .catch(err => {
-//             loggerService.error('Cannot get user', err)
-//             res.status(400).send('Cannot get user')
-//         })
+// app.get('/**', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 // })
-
-// app.post('/api/auth/login', (req, res) => {
-//     const credentials = req.body
-//     userService.checkLogin(credentials)
-//         .then(user => {
-//             const token = userService.getLoginToken(user)
-//             res.cookie('loginToken', token)
-//             res.send(user)
-//         })
-//         .catch(err => {
-//             loggerService.error('Cannot login', err)
-//             res.status(401).send('Not you!')
-//         })
-// })
-
-// app.post('/api/auth/signup', (req, res) => {
-//     const credentials = req.body
-//     userService.save(credentials)
-//         .then(user => {
-//             const token = userService.getLoginToken(user)
-//             res.cookie('loginToken', token)
-//             res.send(user)
-//         })
-//         .catch(err => {
-//             loggerService.error('Cannot signup', err)
-//             res.status(401).send('Nope!')
-//         })
-// })
-
-
-// app.post('/api/auth/logout', (req, res) => {
-//     res.clearCookie('loginToken')
-//     res.send('logged-out!')
-// })
-
-
-// app.put('/api/user', (req, res) => {
-//     const loggedinUser = userService.validateToken(req.cookies.loginToken)
-//     if (!loggedinUser) return res.status(401).send('No logged in user')
-//     const { diff } = req.body
-//     if (loggedinUser.score + diff < 0) return res.status(400).send('No credit')
-//     loggedinUser.score += diff
-//     return userService.save(loggedinUser).then(user => {
-//         const token = userService.getLoginToken(user)
-//         res.cookie('loginToken', token)
-//         res.send(user)
-//     })
-// })
-
-
-app.get('/**', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
-})
-
-
 
 // Listen will always be the last line in our server!
 const port = 3030

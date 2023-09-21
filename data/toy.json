@@ -48,11 +48,14 @@
         "inStock": true
     },
     {
-        "name": "Talking Doll",
-        "price": 663,
-        "labels": [],
-        "createdAt": 1695230013151,
+        "name": "De Niron",
+        "price": 600,
+        "labels": [
+            "Art",
+            "Battery Powered"
+        ],
         "inStock": true,
-        "_id": "bz1ST"
+        "createdAt": 1695294921566,
+        "_id": "yLKrn"
     }
 ]
