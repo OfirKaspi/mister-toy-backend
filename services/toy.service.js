@@ -11,14 +11,12 @@ export const toyService = {
 }
 
 function query(filterBy = {}) {
-    let toysToDisplay = toys
-
     if (filterBy.inStock === '') delete filterBy.inStock
     if (!filterBy.name) filterBy.name = ''
     if (!filterBy.maxPrice) filterBy.maxPrice = Infinity
     const regExp = new RegExp(filterBy.name, 'i')
 
-    toysToDisplay.filter(toy =>
+    const toysToDisplay = toys.filter(toy =>
         regExp.test(toy.name) &&
         toy.price <= filterBy.maxPrice &&
         (filterBy.inStock === undefined || String(toy.inStock) === filterBy.inStock)

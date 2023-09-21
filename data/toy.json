@@ -48,14 +48,15 @@
         "inStock": true
     },
     {
-        "name": "De Niron",
-        "price": 600,
+        "name": "Talking Doll-472",
+        "price": 691,
         "labels": [
-            "Art",
-            "Battery Powered"
+            "Doll",
+            "Battery Powered",
+            "Baby"
         ],
         "inStock": true,
-        "createdAt": 1695294921566,
-        "_id": "yLKrn"
+        "createdAt": 1695301922489,
+        "_id": "37NM5"
     }
 ]

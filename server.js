@@ -32,8 +32,9 @@ app.use(express.json()) // for req.body
 // **************** Toys API ****************:
 // List
 app.get('/api/toy', (req, res) => {
-    const { name, price, inStock } = req.query
-    const filterBy = { name, price: +price, inStock }
+    const { name, maxPrice, inStock } = req.query
+    const filterBy = { name, maxPrice: +maxPrice, inStock }
+    console.log('filterBy from server', filterBy);
     toyService.query(filterBy)
         .then(toys => {
             res.send(toys)
