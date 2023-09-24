@@ -1,17 +1,5 @@
 [
     {
-        "_id": "pBNR1L",
-        "name": "Buzz Lightyear",
-        "price": 620,
-        "labels": [
-            "Doll",
-            "Battery Powered",
-            "Baby"
-        ],
-        "createdAt": 1695230013151,
-        "inStock": true
-    },
-    {
         "_id": "j6VDEr",
         "name": "Kobi Kobi",
         "price": 633,
@@ -33,7 +21,7 @@
             "Baby"
         ],
         "createdAt": 1695230013151,
-        "inStock": true
+        "inStock": false
     },
     {
         "_id": "d6ziZu",
@@ -48,15 +36,15 @@
         "inStock": true
     },
     {
-        "name": "Talking Doll-472",
-        "price": 691,
+        "name": "Talking Doll-913",
+        "price": 849,
         "labels": [
             "Doll",
             "Battery Powered",
             "Baby"
         ],
         "inStock": true,
-        "createdAt": 1695301922489,
-        "_id": "37NM5"
+        "createdAt": 1695483932932,
+        "_id": "VcVYh"
     }
 ]
