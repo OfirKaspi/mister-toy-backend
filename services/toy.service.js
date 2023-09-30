@@ -15,21 +15,23 @@ function query(filterBy = {}) {
     if (filterBy.inStock === '') delete filterBy.inStock
     if (!filterBy.name) filterBy.name = ''
     if (!filterBy.maxPrice) filterBy.maxPrice = Infinity
-    if (!filterBy.labels) filterBy.labels = []
+    // if (!filterBy.labels) filterBy.labels = []
 
     const regExp = new RegExp(filterBy.name, 'i')
 
-    const toysToDisplay = toys.filter(toy =>
+    let toysToDisplay = toys.filter(toy =>
         regExp.test(toy.name) &&
         toy.price <= filterBy.maxPrice &&
-        (filterBy.inStock === undefined || String(toy.inStock) === filterBy.inStock) &&
-        filterBy.labels.every(label => toy.labels.includes(label))
+        (filterBy.inStock === undefined || String(toy.inStock) === filterBy.inStock)
+        // filterBy.labels.every(label => toy.labels.includes(label))
     )
+
+    console.log(filterBy.pageIdx);
 
     if (filterBy.pageIdx !== undefined) {
         const startIdx = filterBy.pageIdx * PAGE_SIZE
         if (toysToDisplay.length + PAGE_SIZE <= PAGE_SIZE + startIdx) return
-        toysToDisplay = toyService.splice(startIdx, PAGE_SIZE + startIdx)
+        toysToDisplay = toysToDisplay.splice(startIdx, PAGE_SIZE + startIdx)
     }
 
     return Promise.resolve(toysToDisplay)

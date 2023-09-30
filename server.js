@@ -32,8 +32,8 @@ app.use(express.static('public'))
 // **************** Toys API ****************:
 // List
 app.get('/api/toy', (req, res) => {
-    const { name, maxPrice, inStock } = req.query
-    const filterBy = { name, maxPrice: +maxPrice, inStock }
+    const { name, maxPrice, inStock, pageIdx } = req.query
+    const filterBy = { name, maxPrice: +maxPrice, inStock, pageIdx }
     console.log('filterBy from server', filterBy);
     toyService.query(filterBy)
         .then(toys => {
