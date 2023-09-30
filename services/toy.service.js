@@ -2,6 +2,7 @@ import fs from 'fs'
 import { utilService } from './util.service.js'
 
 const toys = utilService.readJsonFile('data/toy.json')
+const PAGE_SIZE = 12
 
 export const toyService = {
     query,
@@ -24,6 +25,12 @@ function query(filterBy = {}) {
         (filterBy.inStock === undefined || String(toy.inStock) === filterBy.inStock) &&
         filterBy.labels.every(label => toy.labels.includes(label))
     )
+
+    if (filterBy.pageIdx !== undefined) {
+        const startIdx = filterBy.pageIdx * PAGE_SIZE
+        if (toysToDisplay.length + PAGE_SIZE <= PAGE_SIZE + startIdx) return
+        toysToDisplay = toyService.splice(startIdx, PAGE_SIZE + startIdx)
+    }
 
     return Promise.resolve(toysToDisplay)
 }
