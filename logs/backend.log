@@ -57,3 +57,15 @@
 30.9.2023, 17:12:07 - INFO - Server listening on port http://127.0.0.1:3030/
 30.9.2023, 17:12:28 - INFO - Server listening on port http://127.0.0.1:3030/
 30.9.2023, 17:13:03 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:49:33 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:50:34 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:51:45 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:51:47 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:52:18 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:53:05 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:53:59 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:54:50 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:54:56 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:55:00 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 13:56:30 - INFO - Server listening on port http://127.0.0.1:3030/
+2.10.2023, 14:00:26 - ERROR - Cannot update toy | TypeError: Cannot set properties of undefined (setting 'name')

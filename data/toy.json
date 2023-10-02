@@ -196,15 +196,14 @@
         "_id": "988xx"
     },
     {
-        "name": "Talking Doll-678",
-        "price": 161,
+        "name": "Avner Gadassi",
+        "price": 100,
         "labels": [
-            "Doll",
             "Battery Powered",
             "Baby"
         ],
-        "inStock": true,
-        "createdAt": 1695903139690,
-        "_id": "k0Xyt"
+        "inStock": false,
+        "createdAt": 1696244404720,
+        "_id": "5aQE0"
     }
 ]
