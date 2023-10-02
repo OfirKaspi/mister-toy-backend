@@ -104,3 +104,13 @@
 2.10.2023, 17:12:36 - ERROR - Failed to add toy | MongoError: doc parameter must be an object
 2.10.2023, 17:12:36 - ERROR - cannot insert toy | MongoError: doc parameter must be an object
 2.10.2023, 17:15:00 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 19:46:46 - INFO - server.js loaded...
+2.10.2023, 19:46:46 - INFO - Server is running on port: 3030
+2.10.2023, 19:47:03 - INFO - server.js loaded...
+2.10.2023, 19:47:03 - INFO - Server is running on port: 3030
+2.10.2023, 19:47:49 - INFO - server.js loaded...
+2.10.2023, 19:47:49 - INFO - Server is running on port: 3030
+2.10.2023, 19:49:02 - INFO - server.js loaded...
+2.10.2023, 19:49:02 - INFO - Server is running on port: 3030
+2.10.2023, 19:49:16 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 19:49:18 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
