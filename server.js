@@ -31,89 +31,71 @@ app.use(express.static('public'))
 
 // **************** Toys API ****************:
 // List
-app.get('/api/toy', (req, res) => {
-    const { name, maxPrice, inStock, pageIdx } = req.query
-    const filterBy = { name, maxPrice: +maxPrice, inStock, pageIdx }
-    console.log('filterBy from server', filterBy);
-    toyService.query(filterBy)
-        .then(toys => {
-            res.send(toys)
-        })
-        .catch(err => {
-            loggerService.error('Cannot load toys', err)
-            res.status(400).send('Cannot load toys')
-        })
+app.get('/api/toy', async (req, res) => {
+    try {
+        const { name, maxPrice, inStock, pageIdx } = req.query
+        const filterBy = { name, maxPrice: +maxPrice, inStock, pageIdx }
+        console.log('filterBy from server', filterBy);
+
+        const toys = await toyService.query(filterBy)
+        res.send(toys)
+    } catch (err) {
+        loggerService.error('Cannot load toys', err)
+        res.status(400).send('Cannot load toys')
+    }
 })
 
 // Add
-app.post('/api/toy', (req, res) => {
-    const { name, price, labels, inStock } = req.body
+app.post('/api/toy', async (req, res) => {
+    try {
+        const { name, price, labels, inStock } = req.body
+        const toy = { name, price: +price, labels, inStock }
 
-    const toy = {
-        name,
-        price: +price,
-        labels,
-        inStock,
+        const savedToy = await toyService.save(toy)
+        res.send(savedToy)
+    } catch (err) {
+        loggerService.error('Cannot add toy', err)
+        res.status(400).send('Cannot add toy')
     }
-
-    toyService.save(toy)
-        .then(savedToy => {
-            res.send(savedToy)
-        })
-        .catch(err => {
-            loggerService.error('Cannot add toy', err)
-            res.status(400).send('Cannot add toy')
-        })
 })
 
 // Edit
-app.put('/api/toy', (req, res) => {
+app.put('/api/toy', async (req, res) => {
+    try {
+        const { name, labels, price, _id, createdAt, inStock } = req.body
+        const toy = { _id, createdAt, name, price: +price, labels, inStock }
 
-    const { name, labels, price, _id, createdAt, inStock } = req.body
-    const toy = {
-        _id,
-        createdAt,
-        name,
-        price: +price,
-        labels,
-        inStock
+        const savedToy = await toyService.save(toy)
+        res.send(savedToy)
+    } catch (err) {
+        loggerService.error('Cannot update toy', err)
+        res.status(400).send('Cannot update toy')
     }
-    toyService.save(toy)
-        .then((savedToy) => {
-            res.send(savedToy)
-        })
-        .catch(err => {
-            loggerService.error('Cannot update toy', err)
-            res.status(400).send('Cannot update toy')
-        })
-
 })
 
 // Read - getById
-app.get('/api/toy/:toyId', (req, res) => {
-    const { toyId } = req.params
-    toyService.get(toyId)
-        .then(toy => {
-            // toy.msgs =['HEllo']
-            res.send(toy)
-        })
-        .catch(err => {
-            loggerService.error('Cannot get toy', err)
-            res.status(400).send(err)
-        })
+app.get('/api/toy/:toyId', async (req, res) => {
+    try {
+        const { toyId } = req.params
+
+        const toy = await toyService.get(toyId)
+        res.send(toy)
+    } catch (err) {
+        loggerService.error('Cannot get toy', err)
+        res.status(400).send(err)
+    }
 })
 
 // Remove
-app.delete('/api/toy/:toyId', (req, res) => {
-    const { toyId } = req.params
-    toyService.remove(toyId)
-        .then(msg => {
-            res.send({ msg, toyId: toyId })
-        })
-        .catch(err => {
-            loggerService.error('Cannot delete toy', err)
-            res.status(400).send('Cannot delete toy, ' + err)
-        })
+app.delete('/api/toy/:toyId', async (req, res) => {
+    try {
+        const { toyId } = req.params
+        const msg = await toyService.remove(toyId)
+        res.send({ msg, toyId: toyId })
+    } catch (err) {
+        loggerService.error('Cannot delete toy', err)
+        res.status(400).send('Cannot delete toy, ' + err)
+    }
 })
 
 // app.get('/**', (req, res) => {
