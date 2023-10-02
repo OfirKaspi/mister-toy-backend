@@ -21,6 +21,7 @@ async function login(username, password) {
     console.log(user)
 
     const match = await bcrypt.compare(password, user.password)
+    console.log(user.password);
     if (!match) throw new Error('Invalid username or password')
     console.log(match)
 

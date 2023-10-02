@@ -114,3 +114,95 @@
 2.10.2023, 19:49:02 - INFO - Server is running on port: 3030
 2.10.2023, 19:49:16 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
 2.10.2023, 19:49:18 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:29:30 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:29:30 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:29:32 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:33:13 - DEBUG - auth.service - signup with username: muki, fullname: muki
+2.10.2023, 20:33:13 - DEBUG - auth.route - new account created: {"username":"muki","password":"$2b$10$zM2voqNw7CuXI16hEllBlu4hp6m5kSbyAZUzEaLOOYCKgwl8qqtqC","fullname":"muki","_id":"651afed95e2b265660391c47"}
+2.10.2023, 20:33:13 - DEBUG - auth.service - login with username: muki
+2.10.2023, 20:34:07 - DEBUG - auth.service - signup with username: muki, fullname: muki
+2.10.2023, 20:34:07 - ERROR - cannot insert user | Error: Username taken
+2.10.2023, 20:34:07 - ERROR - Failed to signup Error: Username taken
+2.10.2023, 20:34:14 - DEBUG - auth.service - signup with username: muk, fullname: muk
+2.10.2023, 20:34:15 - DEBUG - auth.service - login with username: muk
+2.10.2023, 20:34:15 - DEBUG - auth.route - new account created: {"username":"muk","password":"$2b$10$XwJArUIYyG2PXR5.FS69zuNbAwf45evPh5HFJcqVI2SGtDXHLXTcO","fullname":"muk","_id":"651aff175e2b265660391c48"}
+2.10.2023, 20:34:29 - DEBUG - auth.service - signup with username: koko, fullname: koko
+2.10.2023, 20:34:29 - DEBUG - auth.route - new account created: {"username":"koko","password":"$2b$10$UPGOT/JPbCw9l6K7B7/eYuNehXnQXFQRD7M9zzNGtJA/C5aeJNxvO","fullname":"koko","_id":"651aff255e2b265660391c49"}
+2.10.2023, 20:34:29 - DEBUG - auth.service - login with username: koko
+2.10.2023, 20:35:02 - DEBUG - auth.service - signup with username: lolo, fullname: lolo
+2.10.2023, 20:35:02 - DEBUG - auth.route - new account created: {"username":"lolo","password":"$2b$10$rrQ5hTdlOLDiujEvvnjZouSallEbUpf8VsPpd2K/5y5RO4EZbtw16","fullname":"lolo","_id":"651aff465e2b265660391c4a"}
+2.10.2023, 20:35:02 - DEBUG - auth.service - login with username: lolo
+2.10.2023, 20:35:03 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:35:03 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:36:23 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:36:23 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:44:06 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:44:07 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:44:14 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:44:15 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:44:23 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:44:23 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:44:29 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:44:29 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:56:14 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:56:28 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:57:34 - DEBUG - auth.service - signup with username: roro, fullname: roro
+2.10.2023, 20:57:34 - DEBUG - auth.route - new account created: {"username":"roro","password":"$2b$10$QEa0oPWHL6s9VwJttIFkmOMrY5day6IOgw1oEpa9/iylba.60r0dq","fullname":"roro","_id":"651b048e5e2b265660391c4b"}
+2.10.2023, 20:57:34 - DEBUG - auth.service - login with username: roro
+2.10.2023, 20:57:35 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:57:35 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:57:38 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 20:57:38 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:14:03 - INFO - server.js loaded...
+2.10.2023, 21:14:03 - INFO - Server is running on port: 3030
+2.10.2023, 21:14:08 - INFO - Req was made | /
+2.10.2023, 21:14:08 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:14:08 - INFO - Req was made | /
+2.10.2023, 21:14:08 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:14:11 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:14:11 - INFO - Req was made | /
+2.10.2023, 21:14:14 - INFO - Req was made | /
+2.10.2023, 21:14:14 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:14:14 - INFO - Req was made | /
+2.10.2023, 21:14:14 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:14:36 - DEBUG - auth.service - signup with username: lolo, fullname: lolo
+2.10.2023, 21:14:36 - ERROR - cannot insert user | Error: Username taken
+2.10.2023, 21:14:36 - ERROR - Failed to signup Error: Username taken
+2.10.2023, 21:18:09 - INFO - server.js loaded...
+2.10.2023, 21:18:09 - INFO - Server is running on port: 3030
+2.10.2023, 21:19:07 - INFO - server.js loaded...
+2.10.2023, 21:19:07 - INFO - Server is running on port: 3030
+2.10.2023, 21:21:55 - INFO - Req was made | /
+2.10.2023, 21:21:55 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:21:56 - INFO - Req was made | /
+2.10.2023, 21:21:56 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:34:38 - DEBUG - auth.service - signup with username: avi, fullname: avi
+2.10.2023, 21:34:38 - DEBUG - auth.route - new account created: {"username":"avi","password":"$2b$10$vd9i8RYVBqhBpX/IG/XBC.JnH3wSHduOs8yC5LGvDBCXzDl.CRTpu","fullname":"avi","_id":"651b0d3ebed7573df02e8193"}
+2.10.2023, 21:34:38 - DEBUG - auth.service - login with username: avi
+2.10.2023, 21:34:38 - INFO - Req was made | /
+2.10.2023, 21:34:38 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:34:38 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:34:38 - INFO - Req was made | /
+2.10.2023, 21:34:40 - INFO - Req was made | /
+2.10.2023, 21:34:40 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:34:41 - INFO - Req was made | /
+2.10.2023, 21:34:41 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:41:57 - DEBUG - auth.service - login with username: 
+2.10.2023, 21:41:57 - ERROR - Failed to Login Error: Invalid username or password
+2.10.2023, 21:42:09 - DEBUG - auth.service - login with username: 
+2.10.2023, 21:42:09 - ERROR - Failed to Login Error: Invalid username or password
+2.10.2023, 21:42:29 - DEBUG - auth.service - login with username: 
+2.10.2023, 21:42:29 - ERROR - Failed to Login Error: Invalid username or password
+2.10.2023, 21:50:10 - DEBUG - auth.service - signup with username: obi, fullname: obi
+2.10.2023, 21:50:10 - DEBUG - auth.route - new account created: {"username":"obi","password":"$2b$10$4CwJWbx.tAJ2sjOx2LvHSeuDRqX7Kveyc/KAXYFt4MgBx2GffecEa","fullname":"obi","_id":"651b10e2bed7573df02e8194"}
+2.10.2023, 21:50:10 - DEBUG - auth.service - login with username: obi
+2.10.2023, 21:50:10 - INFO - Req was made | /
+2.10.2023, 21:50:10 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:50:10 - INFO - Req was made | /
+2.10.2023, 21:50:10 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:50:12 - INFO - Req was made | /
+2.10.2023, 21:50:12 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:50:14 - INFO - Req was made | /
+2.10.2023, 21:50:14 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
+2.10.2023, 21:50:14 - INFO - Req was made | /
+2.10.2023, 21:50:14 - DEBUG - Getting Toys | {"txt":"","minPrice":0,"maxPrice":null,"labels":[],"inStock":"all","sortBy":"name","asc":1}
